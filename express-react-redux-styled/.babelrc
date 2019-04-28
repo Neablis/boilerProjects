@@ -1,0 +1,18 @@
+{
+  "presets": ["@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    "babel-plugin-styled-components", 
+    [
+      "module-resolver", {
+        "root": ["./app/**", "./app/services/**"]
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "presets": [["@babel/preset-react", { "development": true }]]
+    }
+  }
+}

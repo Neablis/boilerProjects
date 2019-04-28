@@ -1,0 +1,32 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "react/prop-types": [1, {
+      "ignore": ["className", "children", "location", "params", "location*"]
+    }],
+    "no-param-reassign": [0, {
+      "props": false
+    }],
+    "prefer-rest-params": 1,
+    "arrow-body-style": 0,
+    "prefer-template": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-no-bind": [0, {
+      "ignoreRefs": false,
+      "allowArrowFunctions": false,
+      "allowBind": true
+    }],
+    "comma-dangle": 0,
+    "semi": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "env": {
+      "browser": true,
+      "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}
