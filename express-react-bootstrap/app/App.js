@@ -1,4 +1,7 @@
 import React from 'react';
+import ThinScrollbar from './components/scrollbar';
+import Timer from './components/timer';
+
 
 export default class App extends React.Component {
   constructor(props) {
@@ -9,8 +12,26 @@ export default class App extends React.Component {
       <div className={'container'}>
         <div className="jumbotron jumbotron-fluid">
           <div className="container">
-            <h1 className="display-3">Express React Bootstrap</h1>
-            <p className="lead">This is a sample project using react express and bootstrap</p>
+            <div className="row">
+              <div style={{margin: 'auto', width: '200'}}>
+                <Timer initialTime={5} bgColor="#283B4C" completeCallback={()=> {console.log('timer finished');}} />
+              </div>
+            </div>
+            {/* <div className="row">
+              <div style={{margin: 'auto', width: '200'}}>
+                <Timer initialTime={1.5} bgColor="#283B4C" completeCallback={()=> {console.log('timer finished')}}/>
+              </div>
+            </div>
+            <div className="row">
+              <div style={{margin: 'auto', width: '200'}}>
+                <Timer initialTime={1} bgColor="#283B4C" completeCallback={()=> {console.log('timer finished')}}/>
+              </div>
+            </div>
+            <div className="row">
+              <div style={{margin: 'auto', width: '200'}}>
+                <Timer initialTime={0.5} bgColor="#283B4C" completeCallback={()=> {console.log('timer finished')}}/>
+              </div>
+            </div> */}
           </div>
         </div>
       </div>
