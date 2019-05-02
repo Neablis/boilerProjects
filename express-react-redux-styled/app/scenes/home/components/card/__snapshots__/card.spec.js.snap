@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render a Card 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "alternativeColor": "#C9EDDC",
+      "backgroundColor": "#4C3B4D",
+      "color": "#7CE577",
+      "white": "#ffffff",
+    }
+  }
+>
+  <card__CardContainer>
+    <card__CardBody />
+  </card__CardContainer>
+</ThemeProvider>
+`;
+
+exports[`render a Card with a header 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "alternativeColor": "#C9EDDC",
+      "backgroundColor": "#4C3B4D",
+      "color": "#7CE577",
+      "white": "#ffffff",
+    }
+  }
+>
+  <card__CardContainer>
+    <card__CardHeader>
+      Has header
+    </card__CardHeader>
+    <card__CardBody />
+  </card__CardContainer>
+</ThemeProvider>
+`;

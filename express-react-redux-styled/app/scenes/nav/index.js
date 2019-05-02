@@ -7,8 +7,8 @@ import theme from 'services/theme'
 
 const SectionContainer = styled.section`
   /* Color the border and text with theme.main */
-  background-color: ${props => props.theme.fg};
-  color: ${props => props.theme.bgLight};
+  background-color: ${props => props.theme.backgroundColor};
+  color: ${props => props.theme.white};
   text-align: center;
 `;
 
@@ -22,7 +22,7 @@ class Nav extends Component {
 
     return (
       <ThemeProvider theme={theme}>
-        <SectionContainer id="nav" className="col-3">
+        <SectionContainer id="nav" className="col-2">
           {
             content
           }

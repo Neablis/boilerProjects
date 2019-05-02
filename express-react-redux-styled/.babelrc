@@ -11,8 +11,14 @@
     ]
   ],
   "env": {
+    "production": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    },
     "development": {
-      "presets": [["@babel/preset-react", { "development": true }]]
+      "plugins": ["transform-es2015-modules-commonjs"]
+    },
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
     }
   }
 }
